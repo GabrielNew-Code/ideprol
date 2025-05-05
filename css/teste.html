@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container com Triângulo na Borda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Estilo do container */
+        .container {
+            width: 300px;
+            height: 200px;
+            background-color: #3498db;
+            position: relative;
+            margin: 50px;
+            padding: 40px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* Triângulo no canto superior esquerdo, acompanhando as bordas */
+        .triangulo {
+            width: 0;
+            height: 0;
+            border-left: 60px solid #ff0000;  /* Cor do triângulo */
+            border-top: 40px solid #c2c2c2;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        /* Ícone dentro do triângulo */
+        .triangulo i {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            font-size: 18px;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="triangulo">
+            <i class="fas fa-arrow-up"></i> <!-- Ícone dentro do triângulo -->
+        </div>
+        <p>Este é o conteúdo do container.</p>
+    </div>
+</body>
+</html>
